@@ -1,0 +1,74 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  background-image: linear-gradient(black, rgb(27, 27, 71));
+}
+
+.title {
+  text-decoration: underline;
+}
+
+.flex-container {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.grid-container {
+  border-radius: 0.2em;
+  margin: 3rem auto;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(2, 15em);
+  grid-column-gap: 2em;
+  grid-row-gap: 3em;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(192, 190, 202, 0.151);
+}
+
+.grid-item {
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition:  0.5s;
+}
+.grid-item:hover {
+  transform: translateY(5%);
+  background-color: rgb(196, 186, 52);
+  color: black;
+}
+a {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+ 
+}
+
+
+img {
+  width: 25%;
+  height: auto;
+}
+h3 {
+    font-size: large;
+  text-align: center;
+}
+
+/* media query for responsiveness*/
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns:  1fr;
+    grid-template-rows: repeat(6, 10em);
+  }
+}

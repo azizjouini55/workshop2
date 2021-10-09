@@ -27,8 +27,6 @@ body {
   grid-template-rows: repeat(2, 15em);
   grid-column-gap: 2em;
   grid-row-gap: 3em;
-  justify-content: center;
-  align-content: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: rgba(192, 190, 202, 0.151);
 }
@@ -36,7 +34,7 @@ body {
 .grid-item {
   border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition:  0.5s;
+  transition: 0.5s;
 }
 .grid-item:hover {
   transform: translateY(5%);
@@ -51,16 +49,14 @@ a {
   align-items: center;
   text-decoration: none;
   color: inherit;
- 
 }
-
 
 img {
   width: 25%;
   height: auto;
 }
 h3 {
-    font-size: large;
+  font-size: large;
   text-align: center;
 }
 
@@ -68,7 +64,7 @@ h3 {
 
 @media screen and (max-width: 480px) {
   .grid-container {
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 10em);
   }
 }
